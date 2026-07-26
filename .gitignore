@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+.next/
+out/
+
+# Java
+target/
+*.class
+
+# IntelliJ
+*.iml
+
+# Mac
+.DS_Store
