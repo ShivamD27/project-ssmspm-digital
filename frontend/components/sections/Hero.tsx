@@ -1,5 +1,6 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Statistics from "./Statistics";
 
 export default function Hero() {
   return (
@@ -79,6 +80,8 @@ export default function Hero() {
             Watch Our Story
           </Button>
         </div>
+
+        <Statistics />
 
       </div>
     </section>
