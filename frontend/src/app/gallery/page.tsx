@@ -6,8 +6,8 @@ export default function GalleryPage() {
     <>
       <PageHero
         eyebrow="Gallery"
-        title="Moments That Inspire"
-        description="Explore life across our schools, colleges, hostels and educational initiatives."
+        title="Capturing Our Journey"
+        description="A glimpse into the memorable moments, events, achievements and campus life of SSMSPM."
       />
 
       <GalleryGrid />

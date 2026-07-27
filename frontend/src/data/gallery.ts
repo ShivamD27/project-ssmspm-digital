@@ -1,45 +1,45 @@
 export interface GalleryImage {
   id: number;
   title: string;
-  category: "School" | "College" | "Sports" | "Events";
+  category: "Campus" | "Events" | "Sports" | "Academics";
   image: string;
 }
 
 export const GALLERY: GalleryImage[] = [
   {
     id: 1,
-    title: "Annual Function",
-    category: "Events",
+    title: "School Campus",
+    category: "Campus",
     image: "/images/gallery/1.jpg",
   },
   {
     id: 2,
-    title: "Sports Day",
-    category: "Sports",
+    title: "Science Exhibition",
+    category: "Academics",
     image: "/images/gallery/2.jpg",
   },
   {
     id: 3,
-    title: "School Building",
-    category: "School",
+    title: "Annual Gathering",
+    category: "Events",
     image: "/images/gallery/3.jpg",
   },
   {
     id: 4,
-    title: "Library",
-    category: "School",
+    title: "Sports Day",
+    category: "Sports",
     image: "/images/gallery/4.jpg",
   },
   {
     id: 5,
-    title: "Science Lab",
-    category: "College",
+    title: "Computer Lab",
+    category: "Academics",
     image: "/images/gallery/5.jpg",
   },
   {
     id: 6,
-    title: "Classroom",
-    category: "School",
+    title: "Library",
+    category: "Campus",
     image: "/images/gallery/6.jpg",
   },
 ];
