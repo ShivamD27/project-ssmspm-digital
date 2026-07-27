@@ -34,5 +34,13 @@ export const NAVIGATION = [
         title: "Contact",
         href: "/contact",
     },
+    {
+        title: "CCTV",
+        href: "/cctv",
+    },
+    {
+        title: "Achievements",
+        href: "/achievements",
+    },
 
 ];

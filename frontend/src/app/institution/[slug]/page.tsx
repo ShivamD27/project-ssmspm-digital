@@ -1,5 +1,14 @@
 import { notFound } from "next/navigation";
+
 import { INSTITUTIONS } from "@/data/institutions";
+
+import InstitutionHero from "@/features/institutions/InstitutionHero";
+import InstitutionOverview from "@/features/institutions/InstitutionOverview";
+import QuickStats from "@/features/institutions/QuickStats";
+import Facilities from "@/features/institutions/Facilities";
+import Gallery from "@/features/institutions/Gallery";
+import PrincipalMessage from "@/features/institutions/PrincipalMessage";
+import ContactCard from "@/features/institutions/ContactCard";
 
 interface Props {
   params: Promise<{
@@ -7,7 +16,9 @@ interface Props {
   }>;
 }
 
-export default async function InstitutionPage({ params }: Props) {
+export default async function InstitutionPage({
+  params,
+}: Props) {
   const { slug } = await params;
 
   const institution = INSTITUTIONS.find(
@@ -19,32 +30,20 @@ export default async function InstitutionPage({ params }: Props) {
   }
 
   return (
-    <main className="py-40">
-      <div className="mx-auto max-w-7xl px-6">
-        <h1 className="text-5xl font-bold">
-          {institution.name}
-        </h1>
+    <>
+      <InstitutionHero institution={institution} />
 
-        <p className="mt-4 text-gray-600">
-          {institution.type}
-        </p>
+      <InstitutionOverview institution={institution} />
 
-        <p className="mt-8 leading-8">
-          {institution.description}
-        </p>
+      <QuickStats institution={institution} />
 
-        <div className="mt-10">
-          <h3 className="text-2xl font-semibold">
-            Facilities
-          </h3>
+      <Facilities institution={institution} />
 
-          <ul className="mt-5 list-disc space-y-2 pl-6">
-            {institution.facilities.map((facility) => (
-              <li key={facility}>{facility}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </main>
+      <Gallery institution={institution} />
+
+      <PrincipalMessage institution={institution} />
+
+      <ContactCard institution={institution} />
+    </>
   );
 }
