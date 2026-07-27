@@ -3,6 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Institution } from "@/data/institutions";
+
+
 import {
     ArrowRight,
     Calendar,
@@ -12,15 +15,7 @@ import {
 } from "lucide-react";
 import { address } from "framer-motion/m";
 
-interface InstitutionCardProps {
-  slug: string;
-  name: string;
-  location?: string;
-  address: string;
-  students: number;
-  established: number;
-  facilities: string[];
-  image: string;
+interface InstitutionCardProps extends Institution {
   reverse?: boolean;
 }
 
