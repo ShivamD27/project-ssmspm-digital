@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-import { NAVIGATION } from "@/constants/navigation";
-import { SITE } from "@/constants/site";
-SITE.tagline
-SITE.marathiTagline
-SITE.name
-SITE.established
+import { NAVIGATION } from "@/data/navigation";
+import { SITE } from "@/data/site";
+
+// SITE.tagline
+// SITE.marathiTagline
+// SITE.name
+// SITE.established
 
 export default function Navbar() {
   return (

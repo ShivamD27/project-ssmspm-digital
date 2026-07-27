@@ -1,4 +1,4 @@
-import { STATISTICS } from "@/constants/statistics";
+import { STATISTICS } from "@/data/statistics";
 
 export default function Statistics() {
   return (
