@@ -1,12 +1,21 @@
 export const FOUNDER = {
-  name: "Prof. Manohar Babarao Dhonde",
-
-  designation: "Founder",
+  name: "Late Sant Shiromani Manmath Swami",
+  designation: "Founder Inspiration",
 
   image: "/images/founders/founder.jpeg",
 
-  message:
-    "Education is not a privilege. It is every child's fundamental right. Our mission has always been to ensure that no student is deprived of quality education because of financial limitations.",
+  quote:
+    "Education is the greatest tool to transform society and empower future generations.",
 
-  since: 1998,
+  description:
+    "Sant Shiromani Manmath Swami Shikshan Prasarak Mandal was established with the vision of providing quality education to every child irrespective of background. The organization continues to uphold this vision by serving thousands of students across Maharashtra.",
+
+  mission: [
+    "Quality Education",
+    "Equal Opportunities",
+    "Rural Development",
+    "Value Based Learning",
+    "Social Responsibility",
+    "Student Empowerment"
+  ]
 };
