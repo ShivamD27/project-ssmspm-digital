@@ -80,7 +80,7 @@ export default function Hero() {
           </Button>
         </div>
 
-        <Statistics />
+        {/* <Statistics /> */}
 
       </div>
     </section>

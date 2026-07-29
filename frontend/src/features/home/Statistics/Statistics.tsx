@@ -1,28 +1,59 @@
-import { STATISTICS } from "@/data/statistics";
+import Container from "@/components/common/Container";
+import StatisticCard from "./StatisticCard";
+
+const STATS = [
+  {
+    value: 6,
+    title: "Institutions",
+  },
+  {
+    value: 2000,
+    suffix: "+",
+    title: "Students",
+  },
+  {
+    value: 150,
+    suffix: "+",
+    title: "Staff Members",
+  },
+  {
+    value: 28,
+    suffix: "+",
+    title: "Years of Service",
+  },
+];
 
 export default function Statistics() {
   return (
-    <section className="mt-20 w-full">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-10 md:grid-cols-4">
+    <section className="bg-[#fafaf8] py-28">
 
-        {STATISTICS.map((item) => (
+      <Container>
 
-          <div
-            key={item.label}
-            className="text-center"
-          >
-            <h2 className="text-5xl font-bold text-[var(--primary)] md:text-6xl">
-              {item.value}
-            </h2>
+        <div className="mb-14 text-center">
 
-            <p className="mt-3 text-sm uppercase tracking-[0.25em] text-gray-500">
-              {item.label}
-            </p>
-          </div>
+          <p className="font-semibold uppercase tracking-[0.3em] text-[var(--primary)]">
+            Our Impact
+          </p>
 
-        ))}
+          <h2 className="mt-4 text-5xl font-bold">
+            Education That Changes Lives
+          </h2>
 
-      </div>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+          {STATS.map((item) => (
+            <StatisticCard
+              key={item.title}
+              {...item}
+            />
+          ))}
+
+        </div>
+
+      </Container>
+
     </section>
   );
 }
